@@ -3,23 +3,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "OrderedDictionary",
+    name: "OrderedDictionaryKit",
     products: [
         .library(
-            name: "OrderedDictionary",
-            targets: ["OrderedDictionary"]
+            name: "OrderedDictionaryKit",
+            targets: ["OrderedDictionaryKit"]
         )
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "OrderedDictionary",
+            name: "OrderedDictionaryKit",
             dependencies: [],
             path: "Sources"
         ),
         .testTarget(
             name: "OrderedDictionaryTests",
-            dependencies: ["OrderedDictionary"],
+            dependencies: ["OrderedDictionaryKit"],
             path: "Tests"
         )
     ],

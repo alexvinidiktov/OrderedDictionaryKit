@@ -6,20 +6,20 @@ let package = Package(
     name: "OrderedDictionary",
     products: [
         .library(
-            name: "OrderedDictionary",
-            targets: ["OrderedDictionary"]
+            name: "OrderedDictionaryKit",
+            targets: ["OrderedDictionaryKit"]
         )
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "OrderedDictionary",
+            name: "OrderedDictionaryKit",
             dependencies: [],
             path: "Sources"
         ),
         .testTarget(
             name: "OrderedDictionaryTests",
-            dependencies: ["OrderedDictionary"],
+            dependencies: ["OrderedDictionaryKit"],
             path: "Tests"
         )
     ],
